@@ -36,7 +36,7 @@ else if (confirmPassword === data.password) {
           console.log("Signup successful:", SucessMessage);
           setData({
             email: "",
-            password: "",
+            password: ""
           });
       
         })
