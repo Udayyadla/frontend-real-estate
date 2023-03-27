@@ -8,7 +8,6 @@ import PageBasic from './components/AddPropertyPage/PageBasic';
 import PageGenInfo from './components/AddPropertyPage/PageGenInfo';
 import PageLocationInfo from './components/AddPropertyPage/PageLocationInfo';
 import PrivateComponent from './components/AddPropertyPage/PrivateComponent';
-import { useState } from 'react';
 import PagePropertyDetails from './components/AddPropertyPage/PagePropertyDetails';
 function App() { 
   return (
