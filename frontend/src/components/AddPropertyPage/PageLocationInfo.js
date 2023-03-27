@@ -1,9 +1,9 @@
 import Sidenav from "../Dashboard/Sidenav";
 import UpperNav from "../Dashboard/UpperNav";
-import GeneralInfo from "../PropertyComponent/GeneralInfo";
+import LocationInfo from "../PropertyComponent/LocationInfo";
 import Menubar from "../PropertyComponent/Menubar";
 
-function PageGenInfo() {
+function PageLocationInfo() {
   return (
     <div className="home">
       <div className="side-nav">
@@ -11,12 +11,13 @@ function PageGenInfo() {
       </div>
       <div className="display">
         <UpperNav/>
+   
         <div className="dashboard">
           <Menubar />
-          <GeneralInfo />
+          <LocationInfo />
         </div>
       </div>
     </div>
   );
 }
-export default PageGenInfo;
+export default PageLocationInfo;
