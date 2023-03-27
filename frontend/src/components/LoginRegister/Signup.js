@@ -1,6 +1,8 @@
 import React,{ useState } from 'react'
 import "./Signup.css"
+import { Link, useNavigate } from "react-router-dom";
 const Signup = () => {
+    const navigate = useNavigate();
   const [err, setErr] = useState("");
   const [data, setData] = useState({
     email: "",
@@ -38,7 +40,7 @@ else if (confirmPassword === data.password) {
             email: "",
             password: ""
           });
-      
+          navigate("/");
         })
         .catch((err) => {
           if (err.response.status === 409)
@@ -105,7 +107,7 @@ else if (confirmPassword === data.password) {
         </center>
       </div>
       <p className="para">
-     Sign In
+      <Link to="/login">Sign In</Link>
       </p>
     </div>
   )
